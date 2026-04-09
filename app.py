@@ -13,6 +13,7 @@ st.set_page_config(page_title="Analisis de imagen", layout="centered", initial_s
 st.title("Análisis de Imagen:🤖🏞️")
 ke = st.text_input('Ingresa tu Clave')
 os.environ['OPENAI_API_KEY'] = ke
+image = Image.open('robotdraw.jpg')
 
 
 # Retrieve the OpenAI API Key from secrets
